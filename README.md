@@ -1,4 +1,5 @@
 kcsi.github.io
 ==============
 
-kcsi
+style guide  
+http://kcsi.github.io/styleguide/styleguide.html

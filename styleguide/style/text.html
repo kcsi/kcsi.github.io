@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html class="ie9" lang="ja"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ja"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Text</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="Styleguide">
+  <meta name="author" content="Your Company Name">
+
+  <link href="../css/kss.css" rel="stylesheet" type="text/css" />
+  <script src="../js/kss_all.js" type="text/javascript"></script><script src="../js/style.js" type="text/javascript"></script>
+</head>
+<body class="style style_text" data-spy="scroll" data-target=".dgl-sidebar">
+  <header class="dgl-header">
+    <div class="dgl-wrapper">
+      <div class="dgl-logo">
+          <!-- styleguide logo here -->
+      </div>
+      <div class="dgl-nav">
+          <a href="../styleguide.html">style guide</a>
+      </div>
+    </div>
+  </header>
+  <div class="dgl-wrapper">
+    <div class="dgl-row">
+      <div class="dgl-sidebar">
+        <ul>
+          <li><a href="page.html">Page</a></li>
+          <li><a href="button.html">Buttons</a></li>
+          <li><a href="form.html">Forms</a></li>
+          <li><a href="text.html">Text</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="dialog.html">Dialog</a></li>
+          <li><a href="utility.html">Utility</a></li>
+        </ul>
+      </div>
+      <div class="dgl-main">
+        <h1>Text</h1>
+
+<p>テキスト関連</p>
+
+<h2>layout</h2>
+
+<h3>textContener</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.1.2 <em>_textLayout.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.textContenerのバリエーション。使用は任意。&lt;p&gt;タグなどで囲まなくてもOK</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-size600</strong> - 幅600px</li>
+          <li><strong>.-sizeFlow3</strong> - フローが3つ並んだときと同じ幅</li>
+          <li><strong>.-sizeInput</strong> - ノーマル.inputTextと同じ幅</li>
+          <li><strong>.-aster</strong> - ※がつくテキスト</li>
+          <li><strong>.-label</strong> - ラベルの幅に合わせる</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="textContener">
+  <p>
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+  </p>
+</div>
+
+<p></div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-size600</span>
+      <div class="textContener -size600">
+  <p>
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+  </p>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeFlow3</span>
+      <div class="textContener -sizeFlow3">
+  <p>
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+  </p>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeInput</span>
+      <div class="textContener -sizeInput">
+  <p>
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+  </p>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-aster</span>
+      <div class="textContener -aster">
+  <p>
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+  </p>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-label</span>
+      <div class="textContener -label">
+  <p>
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+  </p>
+</div>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;textContener&quot;&gt;
+  &lt;p&gt;
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+  &lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+<h3>callout</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.1.1 <em>_textLayout.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.calloutのバリエーション。補足情報やユーザに注意を促したいメッセージを表示</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-error</strong> - エラー時</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="callout">
+  <p>テキストテキスト</p>
+  <ul>
+    <li>リストテキストリストテキスト</li>
+    <li>リストテキストリストテキスト</li>
+  </ul>
+</div>
+
+<p></div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-error</span>
+      <div class="callout -error">
+  <p>テキストテキスト</p>
+  <ul>
+    <li>リストテキストリストテキスト</li>
+    <li>リストテキストリストテキスト</li>
+  </ul>
+</div>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;callout&quot;&gt;
+  &lt;p&gt;テキストテキスト&lt;&#x2F;p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;リストテキストリストテキスト&lt;&#x2F;li&gt;
+    &lt;li&gt;リストテキストリストテキスト&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+<h3>textConfimArea</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.1.3 <em>_textLayout.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.textConfimAreaのバリエーション。1対1の確認事項などで利用</p>
+
+  </div>
+  <div class="styleguide-element">
+    <div class="textConfimArea">
+  <p class=" _name">
+    テキストテキストテキスト
+  </p>
+  <p class=" _contents">
+    aaa@fad.fds
+  </p>
+</div>
+
+<p></div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;textConfimArea&quot;&gt;
+  &lt;p class=&quot; _name&quot;&gt;
+    テキストテキストテキスト
+  &lt;&#x2F;p&gt;
+  &lt;p class=&quot; _contents&quot;&gt;
+    aaa@fad.fds
+  &lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+<h3>panel</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.1.4 <em>_textLayout.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.panelのバリエーション。</p>
+
+  </div>
+  <div class="styleguide-element">
+    <div class="panel">
+  <p>テキストテキスト</p>
+  <ul>
+    <li>リストテキストリストテキスト</li>
+    <li>リストテキストリストテキスト</li>
+  </ul>
+</div>
+
+<p></div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;panel&quot;&gt;
+  &lt;p&gt;テキストテキスト&lt;&#x2F;p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;リストテキストリストテキスト&lt;&#x2F;li&gt;
+    &lt;li&gt;リストテキストリストテキスト&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+<h3>tooltip</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.1.5 <em>_textLayout.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.tooltipのバリエーション</p>
+
+<p>tooltipは普段は不可視要素です。</p>
+
+  </div>
+  <div class="styleguide-element">
+    <div class="position">
+  <button class="button4" type="button">?</button>
+  <span class="tooltip" style="display: block;">テキストテキストテキスト</span>
+</div>
+
+<p></div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;position&quot;&gt;
+  &lt;button class=&quot;button4&quot; type=&quot;button&quot;&gt;?&lt;&#x2F;button&gt;
+  &lt;span class=&quot;tooltip&quot; style=&quot;display: block;&quot;&gt;テキストテキストテキスト&lt;&#x2F;span&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+<h2>headline</h2>
+
+<p>.headline系クラスはすべて&lt;h1&gt;&lt;h2&gt;&lt;p&gt;&lt;div&gt;など任意のブロックレベル要素で使えます</p>
+
+<h3>見出し1</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.2.1 <em>_textStyle.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.headline1のバリエーション。最も大きい見出し</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-hasLogo</strong> - ロゴ付き</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <h1 class="headline1">
+  見出し見出し
+</h1>
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-hasLogo</span>
+      <h1 class="headline1 -hasLogo">
+  見出し見出し
+</h1>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;h1 class=&quot;headline1&quot;&gt;
+  見出し見出し
+&lt;&#x2F;h1&gt;</code></pre>
+  </div>
+
+</div>
+
+<h3>見出し2</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.2.2 <em>_textStyle.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.headline2のバリエーション。.headline1よりも優先度は低い</p>
+
+  </div>
+  <div class="styleguide-element">
+    <h1 class="headline2">
+  見出し見出し
+</h1>
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;h1 class=&quot;headline2&quot;&gt;
+  見出し見出し
+&lt;&#x2F;h1&gt;</code></pre>
+  </div>
+
+</div>
+
+<h3>見出し3</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.2.3 <em>_textStyle.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.headline3のバリエーション。.headline3よりも優先度は低い</p>
+
+  </div>
+  <div class="styleguide-element">
+    <h3 class="headline3">
+  見出し見出し
+</h3>
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;h3 class=&quot;headline3&quot;&gt;
+  見出し見出し
+&lt;&#x2F;h3&gt;</code></pre>
+  </div>
+
+</div>
+
+<h3>見出し4</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.2.4 <em>_textStyle.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.headline4のバリエーション。.headline4よりも優先度は低い</p>
+
+  </div>
+  <div class="styleguide-element">
+    <h4 class="headline4">
+  見出し見出し
+</h4>
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;h4 class=&quot;headline4&quot;&gt;
+  見出し見出し
+&lt;&#x2F;h4&gt;</code></pre>
+  </div>
+
+</div>
+
+<h2>text</h2>
+
+<h3>フォントサイズ・カラー</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.3.1 <em>_textStyle.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>テキストのバリエーション。&lt;p&gt;や&lt;a&gt;などすべてのテキストに使えます</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-fontSize16</strong> - font-size: 16px;</li>
+          <li><strong>.-fontSize14</strong> - font-size: 14px;</li>
+          <li><strong>.-fontSize13</strong> - font-size: 13px; サイト内のフォントサイズの初期値</li>
+          <li><strong>.-fontSize12</strong> - font-size: 12px;</li>
+          <li><strong>.-fontSize11</strong> - font-size: 11px;</li>
+          <li><strong>.-fontWB</strong> - font-weight: bold;</li>
+          <li><strong>.-fontWN</strong> - font-weight: normal;</li>
+          <li><strong>.-fontImportant</strong> - colorが目立つ色に変わる</li>
+          <li><strong>.-deleted</strong> - テキストに打ち消し線</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <span class="">
+  テキストテキスト
+</span>
+<a class="" href="#">
+  テキストテキスト
+</a>
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-fontSize16</span>
+      <span class=" -fontSize16">
+  テキストテキスト
+</span>
+<a class=" -fontSize16" href="#">
+  テキストテキスト
+</a>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-fontSize14</span>
+      <span class=" -fontSize14">
+  テキストテキスト
+</span>
+<a class=" -fontSize14" href="#">
+  テキストテキスト
+</a>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-fontSize13</span>
+      <span class=" -fontSize13">
+  テキストテキスト
+</span>
+<a class=" -fontSize13" href="#">
+  テキストテキスト
+</a>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-fontSize12</span>
+      <span class=" -fontSize12">
+  テキストテキスト
+</span>
+<a class=" -fontSize12" href="#">
+  テキストテキスト
+</a>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-fontSize11</span>
+      <span class=" -fontSize11">
+  テキストテキスト
+</span>
+<a class=" -fontSize11" href="#">
+  テキストテキスト
+</a>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-fontWB</span>
+      <span class=" -fontWB">
+  テキストテキスト
+</span>
+<a class=" -fontWB" href="#">
+  テキストテキスト
+</a>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-fontWN</span>
+      <span class=" -fontWN">
+  テキストテキスト
+</span>
+<a class=" -fontWN" href="#">
+  テキストテキスト
+</a>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-fontImportant</span>
+      <span class=" -fontImportant">
+  テキストテキスト
+</span>
+<a class=" -fontImportant" href="#">
+  テキストテキスト
+</a>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-deleted</span>
+      <span class=" -deleted">
+  テキストテキスト
+</span>
+<a class=" -deleted" href="#">
+  テキストテキスト
+</a>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;span&gt;
+  テキストテキスト
+&lt;&#x2F;span&gt;
+&lt;a href=&quot;#&quot;&gt;
+  テキストテキスト
+&lt;&#x2F;a&gt;</code></pre>
+  </div>
+
+</div>
+
+<h3>文字寄せ</h3>
+
+<div class="styleguide-example">
+
+  <h3>3.3.2 <em>_textStyle.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>文字寄せ。ブロックレベル要素(&lt;p&gt;&lt;div&gt;など)内でのみ有効です</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-left</strong> - text-align: left;</li>
+          <li><strong>.-center</strong> - text-align: center;</li>
+          <li><strong>.-right</strong> - text-align:right;</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <p class="">
+  テキストテキスト
+</p>
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-left</span>
+      <p class=" -left">
+  テキストテキスト
+</p>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-center</span>
+      <p class=" -center">
+  テキストテキスト
+</p>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-right</span>
+      <p class=" -right">
+  テキストテキスト
+</p>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;p&gt;
+  テキストテキスト
+&lt;&#x2F;p&gt;</code></pre>
+  </div>
+
+</div>
+
+<h2>anchor</h2>
+
+<div class="styleguide-example">
+
+  <h3>3.4 <em>_textStyle.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>リンクのバリエーション</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-external</strong> - 外部リンク</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <a class="" href="#">
+  テキストテキスト
+</a>
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-external</span>
+      <a class=" -external" href="#">
+  テキストテキスト
+</a>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;a href=&quot;#&quot;&gt;
+  テキストテキスト
+&lt;&#x2F;a&gt;</code></pre>
+  </div>
+
+</div>
+
+<h2>label</h2>
+
+<div class="styleguide-example">
+
+  <h3>3.5 <em>_textStyle.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.labelのバリエーション</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-important</strong> - 注意を促すラベル</li>
+          <li><strong>.-subscriptionStatus</strong> - 購読ステータスを表示する</li>
+          <li><strong>.-secondly</strong> - 角の丸いラベル</li>
+          <li><strong>.-alert</strong> - 注意をうながす</li>
+          <li><strong>.-sizeFull</strong> - 幅いっぱいにする</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <p class="label">
+  テキストテキスト
+</p>
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-important</span>
+      <p class="label -important">
+  テキストテキスト
+</p>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-subscriptionStatus</span>
+      <p class="label -subscriptionStatus">
+  テキストテキスト
+</p>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-secondly</span>
+      <p class="label -secondly">
+  テキストテキスト
+</p>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-alert</span>
+      <p class="label -alert">
+  テキストテキスト
+</p>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeFull</span>
+      <p class="label -sizeFull">
+  テキストテキスト
+</p>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;p class=&quot;label&quot;&gt;
+  テキストテキスト
+&lt;&#x2F;p&gt;</code></pre>
+  </div>
+
+</div>
+
+<h2>horizen</h2>
+
+<div class="styleguide-example">
+
+  <h3>3.6 <em>_textStyle.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.horizenのバリエーション</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-dotted</strong> - ドットの水平線</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <hr class="horizen">
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-dotted</span>
+      <hr class="horizen -dotted">
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;hr class=&quot;horizen&quot;&gt;</code></pre>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

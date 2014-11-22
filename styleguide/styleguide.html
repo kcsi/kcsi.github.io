@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html class="ie9" lang="ja"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ja"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Styleguide</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="Styleguide">
+  <meta name="author" content="Your Company Name">
+
+  <link href="css/kss.css" rel="stylesheet" type="text/css" />
+  <script src="js/kss_all.js" type="text/javascript"></script><script src="js/style.js" type="text/javascript"></script>
+</head>
+<body class="styleguide" data-spy="scroll" data-target=".dgl-sidebar">
+  <header class="dgl-header">
+    <div class="dgl-wrapper">
+      <div class="dgl-logo">
+          <!-- styleguide logo here -->
+      </div>
+      <div class="dgl-nav">
+          <a href="styleguide.html">style guide</a>
+      </div>
+    </div>
+  </header>
+  <div class="dgl-wrapper">
+    <div class="dgl-row">
+      <div class="dgl-sidebar">
+        <ul>
+          <li><a href="style/page.html">Page</a></li>
+          <li><a href="style/button.html">Buttons</a></li>
+          <li><a href="style/form.html">Forms</a></li>
+          <li><a href="style/text.html">Text</a></li>
+          <li><a href="style/table.html">Table</a></li>
+          <li><a href="style/grid.html">Grid</a></li>
+          <li><a href="style/dialog.html">Dialog</a></li>
+          <li><a href="style/utility.html">Utility</a></li>
+        </ul>
+      </div>
+      <div class="dgl-main">
+        <h1>Styleguide</h1>
+
+<p>サイトで使われるパーツのHTML,CSS一覧です。
+chrome,Firefox,safari,IE9で動作確認を行っています。</p>
+
+<p>例：</p>
+
+<div class="styleguide-example">
+
+  <h3>1.1 <em>_buttons.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.buttonのバリエーション。通常のボタン</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>:hover,:active</strong> - マウスオーバーと押下時</li>
+          <li><strong>:disabled,.disabled</strong> - 押せないとき</li>
+          <li><strong>.-sizeL</strong> - 大きいボタン</li>
+          <li><strong>.-sizeS</strong> - 小さいボタン</li>
+          <li><strong>.-sizeFull</strong> - 横幅いっぱい</li>
+          <li><strong>.-login</strong> - ログインボタン</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <button class="button">button</button>
+<a class="button">Link button</a>
+<input type="submit" class="button" value="Submit button" />
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:hover,:active</span>
+      <button class="button pseudo-class-hover, pseudo-class-active">button</button>
+<a class="button pseudo-class-hover, pseudo-class-active">Link button</a>
+<input type="submit" class="button pseudo-class-hover, pseudo-class-active" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:disabled,.disabled</span>
+      <button class="button pseudo-class-disabled, disabled">button</button>
+<a class="button pseudo-class-disabled, disabled">Link button</a>
+<input type="submit" class="button pseudo-class-disabled, disabled" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeL</span>
+      <button class="button -sizeL">button</button>
+<a class="button -sizeL">Link button</a>
+<input type="submit" class="button -sizeL" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeS</span>
+      <button class="button -sizeS">button</button>
+<a class="button -sizeS">Link button</a>
+<input type="submit" class="button -sizeS" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeFull</span>
+      <button class="button -sizeFull">button</button>
+<a class="button -sizeFull">Link button</a>
+<input type="submit" class="button -sizeFull" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-login</span>
+      <button class="button -login">button</button>
+<a class="button -login">Link button</a>
+<input type="submit" class="button -login" value="Submit button" />
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;button&lt;&#x2F;button&gt;
+&lt;a class=&quot;button&quot;&gt;Link button&lt;&#x2F;a&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;Submit button&quot; &#x2F;&gt;
+</code></pre>
+  </div>
+
+</div>
+
+<p>style guideは</p>
+
+<ul>
+<li>スタイルの説明</li>
+<li>表示サンプル</li>
+<li>基本のソースコード</li>
+</ul>
+
+<p>で構成されています。</p>
+
+<p>上記は、<code>.button</code>のスタイルの一覧です。
+<code>.button</code>はhoverとactive時に色が変わり、
+サイズ違いのバリエーションが存在します。</p>
+
+<p><code>&lt;div class=&quot;button -sizeL&quot;&gt;&lt;/div&gt;</code>のように
+クラス名を複数追加すると、バリエーションのレイアウトを適用することができます。</p>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

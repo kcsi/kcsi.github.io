@@ -1,0 +1,569 @@
+@charset "UTF-8";
+/*
+    CSS Reset by ajk (http://ajk.im/)
+    Based on http://necolas.github.com/normalize.css/
+*/
+html, body, div,
+span, object, iframe,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, strong, sub, sup, var, b, i,
+article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+/* HTML5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+  overflow-y: scroll
+  /* Force scrollbars 100% of the time */
+}
+
+html, body {
+  min-height: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+img::selection {
+  background: transparent;
+}
+
+pre {
+  white-space: pre;
+  /* ? */
+  white-space: pre-wrap;
+  /* CSS3 browsers  */
+  white-space: -moz-pre-wrap !important;
+  /* 1999+ Mozilla  */
+  white-space: -pre-wrap;
+  /* Opera 4 thru 6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 and up */
+  word-wrap: break-word;
+  /* IE 5.5+ and up */
+  -ms-word-break: normal;
+  word-break: normal;
+  word-break: normal
+  /* old webkit */
+}
+
+pre, code, kbd, samp {
+  font: 1em/1.625em Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+}
+
+button, input, select, textarea {
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Ensures hidden content is hidden from all presentations, including screenreaders */
+[hidden] {
+  display: none;
+  visibility: hidden;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7 */
+table button, table input {
+  *overflow: auto;
+}
+
+ul, ol {
+  padding: 0 0 0 1.4em;
+}
+
+dl dd {
+  margin-left: 1.625em;
+}
+
+img, object, video {
+  max-width: 100%
+  /* Automatically scales images larger than the container. Consider this first: http://unstoppablerobotninja.com/entry/fluid-images/ */
+  /* _width: 100%; /* IE6 doesn't support max-width, so we just use width. If the image is larger than the container, just uncomment this. If it is smaller than the container, uncomment and change the 100% value to an absolute one */
+}
+
+img {
+  -ms-interpolation-mode: bicubic
+  /* Improve IE's resizing of images: css-tricks.com/ie-fix-bicubic-scaling-for-images */
+}
+
+/* Corrects overflow displayed oddly in IE9 */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+mark {
+  background: #ff0;
+}
+
+ins {
+  text-decoration: none;
+  background: #ff9;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+strong, b, dt {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+var, address {
+  font-style: normal;
+}
+
+/* Position 'sub' and 'sup' without affecting line-height: gist.github.com/413930 */
+sub, sup {
+  font-size: 0.625em;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #999;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+  color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+
+.token.regex,
+.token.important {
+  color: #e90;
+}
+
+.token.important {
+  font-weight: bold;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* Base */
+body {
+  background: #eee;
+  padding-top: 4.5em;
+}
+
+.dgl-wrapper {
+  margin: 0 auto;
+  max-width: 62.5em;
+  padding: 0 10px;
+  position: relative;
+}
+@media screen and (min-width: 800px) {
+  .dgl-wrapper {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .dgl-wrapper {
+    max-width: 1020px;
+  }
+}
+
+.clearfix, .dgl-row {
+  *zoom: 1;
+}
+.clearfix:before, .dgl-row:before, .clearfix:after, .dgl-row:after {
+  content: "";
+  display: table;
+}
+.clearfix:after, .dgl-row:after {
+  clear: both;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.25em;
+  margin-bottom: 0.66667em;
+}
+
+h2 {
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+h3  {
+  font-size: 1.25em;
+  margin-bottom: 1.2em;
+}
+
+/* Header */
+.dgl-header {
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNlM2UzZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJlMmUyZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3e3e3e), color-stop(100%, #2e2e2e));
+  background: -webkit-linear-gradient(top, #3e3e3e, #2e2e2e);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e3e3e), to(#2e2e2e));
+  background: linear-gradient(to bottom, #3e3e3e, #2e2e2e);
+  color: #fff;
+  padding: 0.75em;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 15;
+}
+
+.dgl-logo {
+  float: left;
+}
+
+.dgl-nav ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.dgl-nav li {
+  display: inline;
+  margin-right: 0.75em;
+}
+.dgl-nav a {
+  color: #999999;
+  display: inline-block;
+  text-decoration: none;
+}
+.dgl-nav a.selected, .dgl-nav a:hover {
+  color: #fff;
+}
+
+/* Main */
+.dgl-row {
+  position: relative;
+}
+
+.dgl-main {
+  background: #fff;
+  padding: 1.5em;
+}
+@media screen and (min-width: 800px) {
+  .dgl-main {
+    float: right;
+    width: 70%;
+  }
+}
+.dgl-main > p, .dgl-main > ul, .dgl-main > ol {
+  margin-bottom: 1.5em;
+}
+
+.dgl-main, .dgl-sidebar {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+/* Side panel */
+.dgl-sidebar {
+  margin-bottom: 1.5em;
+}
+@media screen and (min-width: 800px) {
+  .dgl-sidebar {
+    float: left;
+    position: fixed;
+    width: 12.5em;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .dgl-sidebar {
+    width: 13.75em;
+  }
+}
+.dgl-sidebar ul {
+  background-color: #fff;
+  padding: 0;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+.dgl-sidebar li {
+  line-height: 1.25em;
+  list-style: none;
+}
+.dgl-sidebar a {
+  border: 1px solid #e5e5e5;
+  color: #17c;
+  display: block;
+  margin-bottom: -1px;
+  padding: 0.5em 0.875em;
+  text-decoration: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Page content */
+.dgl-main > p > img {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 0.75em;
+  -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Styleguide block */
+.styleguide-example {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ddd;
+  margin: 15px 0;
+}
+.styleguide-example > h3 {
+  background: #333;
+  border-top: 1px solid #000;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px;
+}
+.styleguide-example > h3 em {
+  float: right;
+  text-transform: none;
+  font-style: normal;
+  font-weight: normal;
+  color: #999;
+}
+.styleguide-example .styleguide-description {
+  background: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em;
+}
+.styleguide-example .styleguide-description p:first-child {
+  margin-top: 0;
+}
+.styleguide-example .styleguide-description p:last-child {
+  margin-bottom: 0;
+}
+.styleguide-example .styleguide-element {
+  position: relative;
+  padding: 0.75em;
+}
+.styleguide-example .styleguide-element + .styleguide-element {
+  border-top: 1px solid #eee;
+  margin-top: 0.125em;
+  padding-top: 0.625em;
+}
+
+.styleguide-example .styleguide-element .styleguide-modifier-name {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 8px;
+  font-size: 11px;
+  color: #999;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-top: none;
+  z-index: 1;
+}
+
+.styleguide-html {
+  border-top: 1px solid #dde7ea;
+  overflow: auto;
+}
+.styleguide-html pre {
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 1.09375em;
+}
+
+.styleguide-example ul.styleguide-modifiers {
+  margin: 0 0 0 10px;
+}
+
+.styleguide-example ul.styleguide-modifiers li {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.styleguide-example ul.styleguide-modifiers li strong {
+  font-family: Monaco, monospace;
+  font-size: 12px;
+  font-weight: normal;
+  color: #222;
+}

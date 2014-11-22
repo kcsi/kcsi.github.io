@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html class="ie9" lang="ja"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ja"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Table</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="Styleguide">
+  <meta name="author" content="Your Company Name">
+
+  <link href="../css/kss.css" rel="stylesheet" type="text/css" />
+  <script src="../js/kss_all.js" type="text/javascript"></script><script src="../js/style.js" type="text/javascript"></script>
+</head>
+<body class="style style_table" data-spy="scroll" data-target=".dgl-sidebar">
+  <header class="dgl-header">
+    <div class="dgl-wrapper">
+      <div class="dgl-logo">
+          <!-- styleguide logo here -->
+      </div>
+      <div class="dgl-nav">
+          <a href="../styleguide.html">style guide</a>
+      </div>
+    </div>
+  </header>
+  <div class="dgl-wrapper">
+    <div class="dgl-row">
+      <div class="dgl-sidebar">
+        <ul>
+          <li><a href="page.html">Page</a></li>
+          <li><a href="button.html">Buttons</a></li>
+          <li><a href="form.html">Forms</a></li>
+          <li><a href="text.html">Text</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="dialog.html">Dialog</a></li>
+          <li><a href="utility.html">Utility</a></li>
+        </ul>
+      </div>
+      <div class="dgl-main">
+        <h1>Table</h1>
+
+<div class="styleguide-example">
+
+  <h3>4.1 <em>_table.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.table trのバリエーション。ディフォルトは各セルの均等割</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-pricing</strong> - 注文時に使うテーブル行</li>
+          <li><strong>.-sizeL</strong> - １行目が広めのテーブル行</li>
+          <li><strong>.-sizeM</strong> - １行目が普通のテーブル行</li>
+          <li><strong>.-sizeFull</strong> - 余白のないテーブル行</li>
+          <li><strong>.-sizeS</strong> - １行目が狭いテーブル行</li>
+          <li><strong>.-disabled</strong> - グレーアウトのテーブル行</li>
+          <li><strong>.-borderNone</strong> - テーブルが2列続くとき、上部の罫線なし</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <table class="table">
+  <thead>
+    <tr class="">
+      <th>見出し1</th>
+      <th>見出し2</th>
+      <th>見出し3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="">
+      <td>
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+      </td>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <td class="-right" colspan="3">テキスト</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-pricing</span>
+      <table class="table">
+  <thead>
+    <tr class=" -pricing">
+      <th>見出し1</th>
+      <th>見出し2</th>
+      <th>見出し3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=" -pricing">
+      <td>
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+      </td>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <td class="-right" colspan="3">テキスト</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeL</span>
+      <table class="table">
+  <thead>
+    <tr class=" -sizeL">
+      <th>見出し1</th>
+      <th>見出し2</th>
+      <th>見出し3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=" -sizeL">
+      <td>
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+      </td>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <td class="-right" colspan="3">テキスト</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeM</span>
+      <table class="table">
+  <thead>
+    <tr class=" -sizeM">
+      <th>見出し1</th>
+      <th>見出し2</th>
+      <th>見出し3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=" -sizeM">
+      <td>
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+      </td>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <td class="-right" colspan="3">テキスト</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeFull</span>
+      <table class="table">
+  <thead>
+    <tr class=" -sizeFull">
+      <th>見出し1</th>
+      <th>見出し2</th>
+      <th>見出し3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=" -sizeFull">
+      <td>
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+      </td>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <td class="-right" colspan="3">テキスト</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeS</span>
+      <table class="table">
+  <thead>
+    <tr class=" -sizeS">
+      <th>見出し1</th>
+      <th>見出し2</th>
+      <th>見出し3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=" -sizeS">
+      <td>
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+      </td>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <td class="-right" colspan="3">テキスト</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-disabled</span>
+      <table class="table">
+  <thead>
+    <tr class=" -disabled">
+      <th>見出し1</th>
+      <th>見出し2</th>
+      <th>見出し3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=" -disabled">
+      <td>
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+      </td>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <td class="-right" colspan="3">テキスト</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-borderNone</span>
+      <table class="table">
+  <thead>
+    <tr class=" -borderNone">
+      <th>見出し1</th>
+      <th>見出し2</th>
+      <th>見出し3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=" -borderNone">
+      <td>
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+      </td>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <td class="-right" colspan="3">テキスト</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;見出し1&lt;&#x2F;th&gt;
+      &lt;th&gt;見出し2&lt;&#x2F;th&gt;
+      &lt;th&gt;見出し3&lt;&#x2F;th&gt;
+    &lt;&#x2F;tr&gt;
+  &lt;&#x2F;thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+        テキストテキストテキストテキスト
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;テキストテキストテキスト&lt;&#x2F;td&gt;
+      &lt;td&gt;テキストテキストテキスト&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;-right&quot; colspan=&quot;3&quot;&gt;テキスト&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+  &lt;&#x2F;tbody&gt;
+&lt;&#x2F;table&gt;</code></pre>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

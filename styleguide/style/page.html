@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html class="ie9" lang="ja"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ja"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="Styleguide">
+  <meta name="author" content="Your Company Name">
+
+  <link href="../css/kss.css" rel="stylesheet" type="text/css" />
+  <script src="../js/kss_all.js" type="text/javascript"></script><script src="../js/style.js" type="text/javascript"></script>
+</head>
+<body class="style style_page" data-spy="scroll" data-target=".dgl-sidebar">
+  <header class="dgl-header">
+    <div class="dgl-wrapper">
+      <div class="dgl-logo">
+          <!-- styleguide logo here -->
+      </div>
+      <div class="dgl-nav">
+          <a href="../styleguide.html">style guide</a>
+      </div>
+    </div>
+  </header>
+  <div class="dgl-wrapper">
+    <div class="dgl-row">
+      <div class="dgl-sidebar">
+        <ul>
+          <li><a href="page.html">Page</a></li>
+          <li><a href="button.html">Buttons</a></li>
+          <li><a href="form.html">Forms</a></li>
+          <li><a href="text.html">Text</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="dialog.html">Dialog</a></li>
+          <li><a href="utility.html">Utility</a></li>
+        </ul>
+      </div>
+      <div class="dgl-main">
+        <h1>Page</h1>
+
+<p>ページで固有のパーツ(header、footer、menu、フロー)。
+基本的に1ページに1回だけ使用</p>
+
+<h2>header</h2>
+
+<div class="styleguide-example">
+
+  <h3>0.1 <em>_layout.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>サイト共通ヘッダー。ログイン時はボタンのテキストが「ログアウト」</p>
+
+  </div>
+  <div class="styleguide-element">
+    <header class="header">
+  <div class="_logo">
+    サービス名
+  </div>
+  <div class="_userAction">
+    <div class="button -login">ログイン</div>
+  </div>
+</header>
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;header class=&quot;header&quot;&gt;
+  &lt;div class=&quot;_logo&quot;&gt;
+    サービス名
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;_userAction&quot;&gt;
+    &lt;div class=&quot;button -login&quot;&gt;ログイン&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;header&gt;</code></pre>
+  </div>
+
+</div>
+
+<h2>footer</h2>
+
+<div class="styleguide-example">
+
+  <h3>0.2 <em>_layout.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>サイト共通フッター</p>
+
+  </div>
+  <div class="styleguide-element">
+    <footer class="footer">
+  <div class="_logo">
+    サービス名
+  </div>
+  <div class="_menu">
+    <ul class="footerMenu">
+      <li><a href="">利用規約</a></li>
+      <li><a href="">プライバシーポリシー</a></li>
+      <li><a href="">特定商法取引に基づく表記</a></li>
+      <li><a href="">ヘルプ</a></li>
+    </ul>
+  </div>
+</footer>
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;footer class=&quot;footer&quot;&gt;
+  &lt;div class=&quot;_logo&quot;&gt;
+    サービス名
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;_menu&quot;&gt;
+    &lt;ul class=&quot;footerMenu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;利用規約&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;プライバシーポリシー&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;特定商法取引に基づく表記&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;ヘルプ&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;footer&gt;</code></pre>
+  </div>
+
+</div>
+
+<h2>menu</h2>
+
+<div class="styleguide-example">
+
+  <h3>0.3 <em>_layout.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>ページメニュー</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>:hover</strong> - マウスオーバー時</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="pageMenu">
+  <ul class=" _primary">
+    <li class=""><a href="">トップ</a></li>
+    <li class="">
+      <a href="">メニュー</a>
+      <ul class=" _secondly">
+        <li><a href="">テキストhover</a></li>
+        <li><a href="">テキストテキスト</a></li>
+      </ul>
+    </li>
+    <li class=""><a href="">メニュー</a></li>
+  </ul>
+</div>
+
+<p></div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:hover</span>
+      <div class="pageMenu">
+  <ul class=" _primary">
+    <li class=" pseudo-class-hover"><a href="">トップ</a></li>
+    <li class=" pseudo-class-hover">
+      <a href="">メニュー</a>
+      <ul class=" _secondly">
+        <li><a href="">テキストhover</a></li>
+        <li><a href="">テキストテキスト</a></li>
+      </ul>
+    </li>
+    <li class=" pseudo-class-hover"><a href="">メニュー</a></li>
+  </ul>
+</div>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;pageMenu&quot;&gt;
+  &lt;ul class=&quot; _primary&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;トップ&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;&quot;&gt;メニュー&lt;&#x2F;a&gt;
+      &lt;ul class=&quot; _secondly&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;テキストhover&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;テキストテキスト&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;メニュー&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+<h2>flow</h2>
+
+<p>直前がmenuだった場合、.-mt_50を追加</p>
+
+<div class="styleguide-example">
+
+  <h3>0.4 <em>_layout.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.pageFlow liのバリエーション。フローナビゲーションにリンクはありません</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-here</strong> - フローの現在地</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="pageFlow">
+  <ul>
+    <li class="-here">現在地</li>
+    <li class="">テキストテキスト</li>
+    <li class="">テキストテキスト</li>
+  </ul>
+</div>
+
+<p></div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-here</span>
+      <div class="pageFlow">
+  <ul>
+    <li class="-here -here">現在地</li>
+    <li class=" -here">テキストテキスト</li>
+    <li class=" -here">テキストテキスト</li>
+  </ul>
+</div>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;pageFlow&quot;&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;-here&quot;&gt;現在地&lt;&#x2F;li&gt;
+    &lt;li&gt;テキストテキスト&lt;&#x2F;li&gt;
+    &lt;li&gt;テキストテキスト&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

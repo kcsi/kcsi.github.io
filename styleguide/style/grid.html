@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html class="ie9" lang="ja"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ja"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Grid</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="Styleguide">
+  <meta name="author" content="Your Company Name">
+
+  <link href="../css/kss.css" rel="stylesheet" type="text/css" />
+  <script src="../js/kss_all.js" type="text/javascript"></script><script src="../js/style.js" type="text/javascript"></script>
+</head>
+<body class="style style_grid" data-spy="scroll" data-target=".dgl-sidebar">
+  <header class="dgl-header">
+    <div class="dgl-wrapper">
+      <div class="dgl-logo">
+          <!-- styleguide logo here -->
+      </div>
+      <div class="dgl-nav">
+          <a href="../styleguide.html">style guide</a>
+      </div>
+    </div>
+  </header>
+  <div class="dgl-wrapper">
+    <div class="dgl-row">
+      <div class="dgl-sidebar">
+        <ul>
+          <li><a href="page.html">Page</a></li>
+          <li><a href="button.html">Buttons</a></li>
+          <li><a href="form.html">Forms</a></li>
+          <li><a href="text.html">Text</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="dialog.html">Dialog</a></li>
+          <li><a href="utility.html">Utility</a></li>
+        </ul>
+      </div>
+      <div class="dgl-main">
+        <h1>Grid</h1>
+
+<div class="styleguide-example">
+
+  <h3>6.1.1 <em>_grid.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.gridのバリエーション</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-sizeFull</strong> - ガターなし</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="grid">
+  <div class=" _gridItem -g_4_12 -hasGutter">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_4_12 -hasGutter" style="background-color: #ccc">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_4_12 -hasGutter">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+
+<p></div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeFull</span>
+      <div class="grid -sizeFull">
+  <div class=" _gridItem -g_4_12 -hasGutter">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_4_12 -hasGutter" style="background-color: #ccc">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_4_12 -hasGutter">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot; <em>gridItem -g</em>4<em>12 -hasGutter&quot;&gt;
+    &lt;p style=&quot;background-color: #ccc&quot;&gt;テキストテキスト&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot; _gridItem -g</em>4<em>12 -hasGutter&quot; style=&quot;background-color: #ccc&quot;&gt;
+    &lt;p style=&quot;background-color: #ccc&quot;&gt;テキストテキスト&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot; _gridItem -g</em>4_12 -hasGutter&quot;&gt;
+    &lt;p style=&quot;background-color: #ccc&quot;&gt;テキストテキスト&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+<h2>子要素のサイズパターン</h2>
+
+<div class="styleguide-example">
+
+  <h3>6.1.2 <em>_grid.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.-gridItemのバリエーション</p>
+
+<p>表示サンプル右のクラス名の_(アンダーバー)が消えてしまっているのでご注意ください</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-hasGutter</strong> - 両端に10pxの余白(ガター)を発生</li>
+          <li><strong>.-g_12_12</strong> - 幅100%</li>
+          <li><strong>.-g_9_12</strong> - 幅75%</li>
+          <li><strong>.-g_8_12</strong> - 幅66.666667%</li>
+          <li><strong>.-g_6_12</strong> - 幅50%</li>
+          <li><strong>.-g_4_12</strong> - 幅33.333334%</li>
+          <li><strong>.-g_3_12</strong> - 幅25%</li>
+          <li><strong>.-g_2_12</strong> - 幅16.666667%</li>
+          <li><strong>.-g_1_12</strong> - 幅8.3333333%</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="grid">
+  <div class=" _gridItem">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+
+<p></div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-hasGutter</span>
+      <div class="grid">
+  <div class=" _gridItem -hasGutter">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -hasGutter">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -hasGutter">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-g<em>12</em>12</span>
+      <div class="grid">
+  <div class=" _gridItem -g_12_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_12_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_12_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-g<em>9</em>12</span>
+      <div class="grid">
+  <div class=" _gridItem -g_9_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_9_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_9_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-g<em>8</em>12</span>
+      <div class="grid">
+  <div class=" _gridItem -g_8_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_8_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_8_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-g<em>6</em>12</span>
+      <div class="grid">
+  <div class=" _gridItem -g_6_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_6_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_6_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-g<em>4</em>12</span>
+      <div class="grid">
+  <div class=" _gridItem -g_4_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_4_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_4_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-g<em>3</em>12</span>
+      <div class="grid">
+  <div class=" _gridItem -g_3_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_3_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_3_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-g<em>2</em>12</span>
+      <div class="grid">
+  <div class=" _gridItem -g_2_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_2_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_2_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-g<em>1</em>12</span>
+      <div class="grid">
+  <div class=" _gridItem -g_1_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_1_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+  <div class=" _gridItem -g_1_12">
+    <p style="background-color: #ccc">テキストテキスト</p>
+  </div>
+</div>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot; _gridItem&quot;&gt;
+    &lt;p style=&quot;background-color: #ccc&quot;&gt;テキストテキスト&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot; _gridItem&quot;&gt;
+    &lt;p style=&quot;background-color: #ccc&quot;&gt;テキストテキスト&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot; _gridItem&quot;&gt;
+    &lt;p style=&quot;background-color: #ccc&quot;&gt;テキストテキスト&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html class="ie9" lang="ja"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ja"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>buttons</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="Styleguide">
+  <meta name="author" content="Your Company Name">
+
+  <link href="../css/kss.css" rel="stylesheet" type="text/css" />
+  <script src="../js/kss_all.js" type="text/javascript"></script><script src="../js/style.js" type="text/javascript"></script>
+</head>
+<body class="style style_button" data-spy="scroll" data-target=".dgl-sidebar">
+  <header class="dgl-header">
+    <div class="dgl-wrapper">
+      <div class="dgl-logo">
+          <!-- styleguide logo here -->
+      </div>
+      <div class="dgl-nav">
+          <a href="../styleguide.html">style guide</a>
+      </div>
+    </div>
+  </header>
+  <div class="dgl-wrapper">
+    <div class="dgl-row">
+      <div class="dgl-sidebar">
+        <ul>
+          <li><a href="page.html">Page</a></li>
+          <li><a href="button.html">Buttons</a></li>
+          <li><a href="form.html">Forms</a></li>
+          <li><a href="text.html">Text</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="dialog.html">Dialog</a></li>
+          <li><a href="utility.html">Utility</a></li>
+        </ul>
+      </div>
+      <div class="dgl-main">
+        <h1>Buttons</h1>
+
+<h2>layout</h2>
+
+<div class="styleguide-example">
+
+  <h3>1.0.1 <em>_buttons.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.buttonAreaのバリエーション。通常は横並びなし</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-aligned</strong> - 2個並び</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="buttonArea">
+  <div class="button2">button</div>
+  <button class="button">button</button>
+</div>
+
+<p></div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-aligned</span>
+      <div class="buttonArea -aligned">
+  <div class="button2">button</div>
+  <button class="button">button</button>
+</div>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;buttonArea&quot;&gt;
+  &lt;div class=&quot;button2&quot;&gt;button&lt;&#x2F;div&gt;
+  &lt;button class=&quot;button&quot;&gt;button&lt;&#x2F;button&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+<h3>ボタンエリアにテキストが回りこむ場合</h3>
+
+<div class="styleguide-example">
+
+  <h3>1.0.2 <em>_buttons.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.buttonAreaHasTextのバリエーション。ツールの都合上、サンプルではボタンサイズが.-sizeSのみです。</p>
+
+<p>初期ではボタンサイズがノーマルにぴったりになります</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>.-buttonSizeS</strong> - ボタンサイズが.-sizeSにぴったり</li>
+          <li><strong>.-buttonSizeL</strong> - ボタンサイズが.-sizeLにぴったり</li>
+          <li><strong>.-reverse</strong> - 反転</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <div class="buttonAreaHasText">
+  <div class=" _button">
+    <button class="button -sizeS">button</button>
+  </div>
+  <p class=" _text">
+    あテキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキストい
+  </p>
+</div>
+
+<p></div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-buttonSizeS</span>
+      <div class="buttonAreaHasText -buttonSizeS">
+  <div class=" _button">
+    <button class="button -sizeS">button</button>
+  </div>
+  <p class=" _text">
+    あテキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキストい
+  </p>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-buttonSizeL</span>
+      <div class="buttonAreaHasText -buttonSizeL">
+  <div class=" _button">
+    <button class="button -sizeS">button</button>
+  </div>
+  <p class=" _text">
+    あテキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキストい
+  </p>
+</div>
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-reverse</span>
+      <div class="buttonAreaHasText -reverse">
+  <div class=" _button">
+    <button class="button -sizeS">button</button>
+  </div>
+  <p class=" _text">
+    あテキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキストい
+  </p>
+</div>
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;div class=&quot;buttonAreaHasText&quot;&gt;
+  &lt;div class=&quot; _button&quot;&gt;
+    &lt;button class=&quot;button -sizeS&quot;&gt;button&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+  &lt;p class=&quot; _text&quot;&gt;
+    あテキストテキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキストテキストい
+  &lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;</code></pre>
+  </div></p>
+
+<p></div></p>
+
+<h2>button</h2>
+
+<div class="styleguide-example">
+
+  <h3>1.1 <em>_buttons.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.buttonのバリエーション。通常のボタン</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>:hover,:active</strong> - マウスオーバーと押下時</li>
+          <li><strong>:disabled,.disabled</strong> - 押せないとき</li>
+          <li><strong>.-sizeL</strong> - 大きいボタン</li>
+          <li><strong>.-sizeS</strong> - 小さいボタン</li>
+          <li><strong>.-sizeFull</strong> - 横幅いっぱい</li>
+          <li><strong>.-login</strong> - ログインボタン</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <button class="button">button</button>
+<a class="button">Link button</a>
+<input type="submit" class="button" value="Submit button" />
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:hover,:active</span>
+      <button class="button pseudo-class-hover, pseudo-class-active">button</button>
+<a class="button pseudo-class-hover, pseudo-class-active">Link button</a>
+<input type="submit" class="button pseudo-class-hover, pseudo-class-active" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:disabled,.disabled</span>
+      <button class="button pseudo-class-disabled, disabled">button</button>
+<a class="button pseudo-class-disabled, disabled">Link button</a>
+<input type="submit" class="button pseudo-class-disabled, disabled" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeL</span>
+      <button class="button -sizeL">button</button>
+<a class="button -sizeL">Link button</a>
+<input type="submit" class="button -sizeL" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeS</span>
+      <button class="button -sizeS">button</button>
+<a class="button -sizeS">Link button</a>
+<input type="submit" class="button -sizeS" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeFull</span>
+      <button class="button -sizeFull">button</button>
+<a class="button -sizeFull">Link button</a>
+<input type="submit" class="button -sizeFull" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-login</span>
+      <button class="button -login">button</button>
+<a class="button -login">Link button</a>
+<input type="submit" class="button -login" value="Submit button" />
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;button&lt;&#x2F;button&gt;
+&lt;a class=&quot;button&quot;&gt;Link button&lt;&#x2F;a&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;Submit button&quot; &#x2F;&gt;
+</code></pre>
+  </div>
+
+</div>
+
+<div class="styleguide-example">
+
+  <h3>1.2 <em>_buttons.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.button2のバリエーション。キャンセルボタンなど</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>:hover,:active</strong> - マウスオーバーと押下時</li>
+          <li><strong>.-sizeL</strong> - 大きいボタン</li>
+          <li><strong>.-sizeS</strong> - 小さいボタン</li>
+          <li><strong>.-sizeFull</strong> - 横幅いっぱい</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <button class="button2">button</button>
+<a class="button2">Link button</a>
+<input type="submit" class="button2" value="Submit button" />
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:hover,:active</span>
+      <button class="button2 pseudo-class-hover, pseudo-class-active">button</button>
+<a class="button2 pseudo-class-hover, pseudo-class-active">Link button</a>
+<input type="submit" class="button2 pseudo-class-hover, pseudo-class-active" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeL</span>
+      <button class="button2 -sizeL">button</button>
+<a class="button2 -sizeL">Link button</a>
+<input type="submit" class="button2 -sizeL" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeS</span>
+      <button class="button2 -sizeS">button</button>
+<a class="button2 -sizeS">Link button</a>
+<input type="submit" class="button2 -sizeS" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeFull</span>
+      <button class="button2 -sizeFull">button</button>
+<a class="button2 -sizeFull">Link button</a>
+<input type="submit" class="button2 -sizeFull" value="Submit button" />
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;button class=&quot;button2&quot;&gt;button&lt;&#x2F;button&gt;
+&lt;a class=&quot;button2&quot;&gt;Link button&lt;&#x2F;a&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button2&quot; value=&quot;Submit button&quot; &#x2F;&gt;
+</code></pre>
+  </div>
+
+</div>
+
+<div class="styleguide-example">
+
+  <h3>1.3 <em>_buttons.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.button3のバリエーション。</p>
+
+      <ul class="styleguide-modifier">
+          <li><strong>:hover,:active</strong> - マウスオーバーと押下時</li>
+          <li><strong>.-sizeL</strong> - 大きいボタン</li>
+          <li><strong>.-sizeS</strong> - 小さいボタン</li>
+          <li><strong>.-sizeFull</strong> - 横幅いっぱい</li>
+      </ul>
+  </div>
+  <div class="styleguide-element">
+    <button class="button3">button</button>
+<a class="button3">Link button</a>
+<input type="submit" class="button3" value="Submit button" />
+
+  </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:hover,:active</span>
+      <button class="button3 pseudo-class-hover, pseudo-class-active">button</button>
+<a class="button3 pseudo-class-hover, pseudo-class-active">Link button</a>
+<input type="submit" class="button3 pseudo-class-hover, pseudo-class-active" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeL</span>
+      <button class="button3 -sizeL">button</button>
+<a class="button3 -sizeL">Link button</a>
+<input type="submit" class="button3 -sizeL" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeS</span>
+      <button class="button3 -sizeS">button</button>
+<a class="button3 -sizeS">Link button</a>
+<input type="submit" class="button3 -sizeS" value="Submit button" />
+
+    </div>
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.-sizeFull</span>
+      <button class="button3 -sizeFull">button</button>
+<a class="button3 -sizeFull">Link button</a>
+<input type="submit" class="button3 -sizeFull" value="Submit button" />
+
+    </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;button class=&quot;button3&quot;&gt;button&lt;&#x2F;button&gt;
+&lt;a class=&quot;button3&quot;&gt;Link button&lt;&#x2F;a&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button3&quot; value=&quot;Submit button&quot; &#x2F;&gt;
+</code></pre>
+  </div>
+
+</div>
+
+<div class="styleguide-example">
+
+  <h3>1.4 <em>_buttons.scss</em></h3>
+  <div class="styleguide-description markdown-body">
+    <p>.button4。「?」用</p>
+
+  </div>
+  <div class="styleguide-element">
+    <button class="button4">?</button>
+<span class="tooltip">テキストテキストテキスト</span>
+  </div>
+  <div class="styleguide-html">
+    <pre><code class="language-markup">&lt;button class=&quot;button4&quot;&gt;?&lt;&#x2F;button&gt;
+&lt;span class=&quot;tooltip&quot;&gt;テキストテキストテキスト&lt;&#x2F;span&gt;</code></pre>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
